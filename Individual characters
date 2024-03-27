@@ -1,0 +1,4 @@
+String1 = 'VIEW'
+print("the individual characters from given string is:")
+for i in range(0,len(String1)):
+    print(String1[i],end=" ")
