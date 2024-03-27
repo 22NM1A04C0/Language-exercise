@@ -1,0 +1,6 @@
+A = int(input("enter the value of A "))
+B = int(input("enter the value of B "))
+A = A*B 
+B = A/B 
+A = A/B
+print("The swapping numbers are:",A,B)
