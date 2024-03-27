@@ -1,0 +1,8 @@
+num = int(input("Enter the value of number"))
+Sum = 0
+Temp = num 
+while(Temp!=0):
+    r = Temp%10
+    Sum+=r  
+    Temp = Temp//10 
+print("The sum of digits in a given number is:",Sum)
