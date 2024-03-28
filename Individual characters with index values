@@ -1,0 +1,4 @@
+Str1 = 'USHA'
+x = list(Str1)
+for i in range(0,len(Str1)):
+    print([i],x[i])
