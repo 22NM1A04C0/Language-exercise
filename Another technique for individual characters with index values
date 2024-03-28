@@ -1,0 +1,5 @@
+Str1 = 'USHA'
+index = 0
+for i  in Str1:
+    print('Str1[',index,']=',i)
+    index+=1
