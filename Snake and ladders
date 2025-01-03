@@ -1,0 +1,15 @@
+dice=[1,6,4,3,5,2,6,1,1]
+board=[38,44,48,67,91,73,79,99,100]
+ladders=0
+snakes=0
+if board[0]>dice[0]:
+  ladders+=1
+if board[0]<dice[0]:
+  snakes+=1
+for i in range(1,len(dice)):
+  if board[i]>dice[i]+board[i-1]:
+    ladders+=1
+  if board[i]<dice[i]+board[i-1]:
+    snakes+=1
+print(ladders,snakes)
+  
