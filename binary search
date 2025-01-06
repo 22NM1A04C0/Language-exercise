@@ -1,0 +1,16 @@
+import sys
+arr=[12,18,35,50,61]
+value=12
+min=0
+max=len(arr)-1
+while min<=max:
+  mid = (min+max)//2
+  
+  if value<arr[mid]:
+    max=mid-1
+  else:
+    min=mid+1
+if arr[min]==value:
+  print(f"found at {min+1}")
+else:
+  print("Not found")
