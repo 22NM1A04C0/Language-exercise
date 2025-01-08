@@ -1,0 +1,19 @@
+postfix="10 5 3 + * 4 7 * -"
+arr=postfix.split()
+stack=[]
+for val in arr:
+  if val not in "+-*/":
+    stack.append(float(val))
+  else:
+    b=stack.pop()
+    a=stack.pop()
+    if val=='+':
+      c=a+b
+    elif val=='-':
+      c=a-b
+    elif val=='*':
+      c=a*b
+    else:
+      c=a/b
+    stack.append(c)
+print(stack.pop())
